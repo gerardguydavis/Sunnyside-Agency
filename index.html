@@ -20,6 +20,13 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -46,64 +53,71 @@
     <img id="arrow" src="images/icon-arrow-down.svg" alt="" />
   </div>
   <main>
-    <div class="box" id="brand">
-      <h2>Transform your brand</h2>
+    <div class="services">
+      <div class="box" id="transform-text">
+        <h2>Transform your brand</h2>
 
-      <p>We are a full-service creative agency specializing in helping brands grow fast.
-        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-      <a href="">Learn more</a>
-    </div>
-    <div class="box" id="egg"></div>
-    <div class="box" id="standout">
-      <h2>Stand out to the right audience</h2>
-
-      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
-        build and extend your brand in digital places.</p>
-
-      <a href="">Learn more</a>
-    </div>
-    <div class="box" id="flute"></div>
-    <div class="box service" id="graphic-design">
-      <h3>Graphic design</h3>
-      <p class="small-text">Great design makes you memorable. We deliver artwork that underscores your brand message and
-        captures potential clients’ attention.</p>
-    </div>
-    <div class="box service" id="photography">
-      <h3>Photography</h3>
-      <p class="small-text">Increase your credibility by getting the most stunning, high-quality photos that improve
-        your business image.</p>
-    </div>
-    <div class="testimonials">
-      <h4>Client testimonials</h4>
-      <div class="client">
-        <img class="client-photo" src="images/image-emily.jpg" alt="Emily R. photo" />
-        <p class="quote">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
-          were always hit.</p>
-        <h5>Emily R.</h5>
-        <h6>Marketing Director</h6>
+        <a href="">Learn more</a>
       </div>
-      <div class="client">
-        <img class="client-photo" src="images/image-thomas.jpg" alt="Thomas S. photo" />
-        <p class="quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-          satisfying and enjoyable experience.</p>
-        <h5>Thomas S.</h5>
-        <h6>Chief Operating Officer</h6>
+      <div class="box" id="transform"></div>
+      <div class="box" id="stand-out-text">
+        <h2>Stand out to the right audience</h2>
+
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.</p>
+
+        <a href="">Learn more</a>
       </div>
-      <div class="client">
-        <img class="client-photo" src="images/image-jennie.jpg" alt="Jennie F. photo" />
-        <p class="quote">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-          recommended!</p>
-        <h5>Jennie F.</h5>
-        <h6>Business Owner</h6>
+      <div class="box" id="stand-out"></div>
+      <div class="box service" id="graphic-design">
+        <div class="graphic-design-text">
+          <h3>Graphic Design</h3>
+          <p class="small-text">Great design makes you memorable. We deliver artwork that underscores your brand message
+            and
+            captures potential clients’ attention.</p>
+        </div>
       </div>
-    </div>
-    <div class="bottom-boxes">
-      <div class="bottom-box" id="milks"></div>
-      <div class="bottom-box" id="orange-plate"></div>
-      <div class="bottom-box" id="cone"></div>
-      <div class="bottom-box" id="cubes"></div>
-    </div>
+      <div class="box service" id="photography">
+        <div class="photography-text">
+          <h3>Photography</h3>
+          <p class="small-text">Increase your credibility by getting the most stunning, high-quality photos that improve
+            your business image.</p>
+        </div>
+      </div>
+      <div class="testimonials">
+        <h4>Client testimonials</h4>
+        <div class="client">
+          <img class="client-photo" src="images/image-emily.jpg" alt="Emily R. photo" />
+          <p class="quote">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+            deadlines
+            were always hit.</p>
+          <h5>Emily R.</h5>
+          <h6>Marketing Director</h6>
+        </div>
+        <div class="client">
+          <img class="client-photo" src="images/image-thomas.jpg" alt="Thomas S. photo" />
+          <p class="quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+            satisfying and enjoyable experience.</p>
+          <h5>Thomas S.</h5>
+          <h6>Chief Operating Officer</h6>
+        </div>
+        <div class="client">
+          <img class="client-photo" src="images/image-jennie.jpg" alt="Jennie F. photo" />
+          <p class="quote">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+            recommended!</p>
+          <h5>Jennie F.</h5>
+          <h6>Business Owner</h6>
+        </div>
+      </div>
+      <div class="bottom-boxes">
+        <div class="bottom-box" id="milks"></div>
+        <div class="bottom-box" id="orange-plate"></div>
+        <div class="bottom-box" id="cone"></div>
+        <div class="bottom-box" id="cubes"></div>
+      </div>
   </main>
   <footer>
     <img id="footer-logo" src="images/logo.svg" alt="Sunnyside logo" />
@@ -126,7 +140,7 @@
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://gerarddavis.com">Gerard Davis</a>.
     </div>
   </footer>
 </body>
