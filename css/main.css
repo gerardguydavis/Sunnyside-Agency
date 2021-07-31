@@ -100,8 +100,8 @@ p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url("../images/mobile/image-header.jpg");
-    background-size: contain;
+    background: url("../images/mobile/image-header.jpg") center;
+    background-size: cover;
     height: 100%;
 }
 
@@ -122,7 +122,9 @@ header {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: "Fraunces", serif;
 }
 
@@ -147,6 +149,7 @@ h1 {
 
 h2 {
     font-weight: 900;
+    font-size: 2em;
 }
 
 .services p {
@@ -157,8 +160,8 @@ h2 {
 #transform {
     grid-row-start: 1;
     grid-row-end: 2;
-    background: url(../images/mobile/image-transform.jpg);
-    background-size: contain;
+    background: url(../images/mobile/image-transform.jpg) center;
+    background-size: cover;
 }
 
 #transform-text,
@@ -167,7 +170,7 @@ h2 {
     justify-content: center;
     flex-flow: row wrap;
     text-align: center;
-    padding: 70px 35px;
+    padding: 70px 30px;
 }
 
 .services a {
@@ -199,8 +202,8 @@ h2 {
 }
 
 #stand-out {
-    background: url(../images/mobile/image-stand-out.jpg);
-    background-size: contain;
+    background: url(../images/mobile/image-stand-out.jpg) center;
+    background-size: cover;
     grid-row-start: 3;
     grid-row-end: 4;
 }
@@ -216,43 +219,90 @@ h2 {
     align-items: flex-end;
     text-align: center;
     flex-flow: row wrap;
-    padding: 60px 35px;
+    padding: 60px 20px;
 }
 
 #graphic-design {
-    background: url(../images/mobile/image-graphic-design.jpg);
-    background-size: contain;
+    background: url(../images/mobile/image-graphic-design.jpg) center;
+    background-size: cover;
     grid-row-start: 5;
     grid-row-end: 6;
 }
 
 #graphic-design h3 {
+    font-size: 27px;
     font-weight: 900;
     color: hsl(167, 40%, 24%);
 
 }
 
 #graphic-design p {
-    font-size: 14px;
+    font-size: 16px;
     color: hsl(167, 40%, 24%);
 }
 
 #photography {
-    background: url(../images/mobile/image-photography.jpg);
-    background-size: contain;
+    background: url(../images/mobile/image-photography.jpg) center;
+    background-size: cover;
     grid-row-start: 6;
 }
 
 #photography h3 {
+    font-size: 27px;
     font-weight: 900;
     color: hsl(198, 62%, 26%);
 }
 
 #photography p {
-    font-size: 14px;
+    font-size: 18px;
     color: hsl(198, 62%, 26%);
 }
 
+/*****TESTIMONIALS*****/
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 35px 22px;
+}
+
+.testimonials h4,
+.testimonials h5 {
+    font-weight: 900;
+} 
+
+.testimonials h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    color: hsl(210, 4%, 67%);
+}
+
+.testimonials h5 {
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: .75em;
+}
+
+.testimonials h6 {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+    margin-top: 0;
+}
+
+.testimonials p {
+    color: #545351;
+}
+
+.client-photo {
+    border-radius: 50%;
+    width: 70px;
+    padding: 20px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
