@@ -150,11 +150,12 @@ h1 {
 h2 {
     font-weight: 900;
     font-size: 2em;
+    margin-top: 0;
 }
 
 .services p {
     line-height: 1.5em;
-    color: hsl(210, 4%, 67%);
+    color: hsl(232, 10%, 55%);
 }
 
 #transform {
@@ -170,13 +171,13 @@ h2 {
     justify-content: center;
     flex-flow: row wrap;
     text-align: center;
-    padding: 70px 30px;
+    padding: 70px 25px;
 }
 
 .services a {
     font-family: "Fraunces", serif;
     font-weight: 900;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -186,7 +187,7 @@ h2 {
 .services a::after {
     content: '';
     height: 8px;
-    margin: -5px -5px 0;
+    margin: -6px -6px 0;
     justify-content: center;
     border-radius: 5px;
     display: block;
@@ -292,6 +293,7 @@ h2 {
     font-size: 14px;
     color: hsl(210, 4%, 67%);
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .testimonials p {
