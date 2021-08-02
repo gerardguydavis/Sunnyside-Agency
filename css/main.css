@@ -106,8 +106,8 @@ p {
 }
 
 header {
-  width: 100%;
-  padding: 35px 25px;
+  width: 325px;
+  padding: 35px 0;
 }
 
 .mobile-head {
@@ -120,18 +120,28 @@ header {
   display: none;
 }
 
+#tab {
+  width: 0; 
+  height: 0;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-right: 25px solid #fff;
+}
+
 .dropmenu {
     display: flex;
     flex-flow: column;
     position: fixed;
     padding: 0 0 40px;
     justify-content: center;
-    margin-top: 60px;
-    width: 90%;
+    margin-top: 50px;
+    width: 325px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
-    box-shadow: 0 1px 2px 0 #777;
 }
 
 /*.navmobile::after {
