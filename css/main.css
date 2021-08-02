@@ -142,6 +142,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
+    animation: slide-down .3s;
 }
 
 /*.navmobile::after {
@@ -159,6 +160,7 @@ header {
 
 .dropmenu ul {
   padding: 0;
+  overflow: hidden;
 }
 
 .dropmenu ul li {
@@ -436,6 +438,28 @@ footer {
   display: flex;
   width: 75%;
   justify-content: space-evenly;
+}
+
+/*****ANIMATIONS*****/
+@keyframes slide-down {
+  from {
+    height: 0;
+  }
+
+to{
+    height: 270px;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    height: 270px;
+  }
+
+  to {
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 /* ==========================================================================
