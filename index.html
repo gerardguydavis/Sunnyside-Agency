@@ -32,22 +32,26 @@
 <body>
   <div class="hero">
     <header>
-      <img id="logo" src="images/logo.svg" alt="Sunnyside logo" />
-      <img id="hamburger" src="images/icon-hamburger.svg" alt="hamburger" />
-      <ul class="navmenu">
-        <a href="">
-          <li>About</li>
+      <div class="mobile-head">
+        <img id="logo" src="images/logo.svg" alt="Sunnyside logo" />
+        <img id="hamburger" src="images/icon-hamburger.svg" alt="hamburger" />
+      </div>
+      <div id="navmenu" class="hide">
+        <ul>
+          <a href="">
+            <li>About</li>
+          </a>
+          <a href="">
+            <li>Services</li>
+          </a>
+          <a href="">
+            <li>Projects</li>
+          </a>
+        </ul>
+        <a id="contact" href="">
+          <span>Contact</span>
         </a>
-        <a href="">
-          <li>Services</li>
-        </a>
-        <a href="">
-          <li>Projects</li>
-        </a>
-        <a href="">
-          <li><span id="contact">Contact</span></li>
-        </a>
-      </ul>
+      </div>
     </header>
     <h1>We are creatives</h1>
     <img id="arrow" src="images/icon-arrow-down.svg" alt="" />
@@ -141,6 +145,7 @@
       Coded by <a href="https://gerarddavis.com">Gerard Davis</a>.
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
