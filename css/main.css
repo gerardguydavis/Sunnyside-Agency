@@ -390,10 +390,9 @@ h2 {
 /*****BOTTOM BOXES*****/
 .bottom-boxes {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 187px 187px;
   grid-template-columns: 1fr 1fr;
-  width:100%;
-  height: 375px;
+  width: 100%;
 }
 
 #milkbottles {
@@ -553,11 +552,11 @@ to{
 
 /*****DESKTOP*****/
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 /******HERO******/
 
   .hero {
-    background: url('../images/desktop/image-header.jpg') center;
+    background: url('../images/desktop/image-header.jpg') bottom;
     background-size: cover;
     min-height: 800px;
   }
@@ -595,7 +594,6 @@ to{
     list-style: none;
     display: inline;
     font-family: "Barlow", sans-serif;
-    font-size: 16px;
     padding: 0 25px;
   }
 
@@ -611,7 +609,6 @@ to{
   #contact span {
     background-color: #fff;
     color: #000;
-    font-size: 14px;
   }
 
   #tab {
@@ -619,19 +616,23 @@ to{
   }
 
   .hero-text {
-    margin-top: -325px;
     align-items: flex-start;
+    height: 100%;
+    margin-top: -100px;
+    position: sticky;
+    top: -1px;
   }
 
   .hero-text h1 {
     width: 100%;
     font-size: 48px;
     letter-spacing: 10px;
+    margin: 0;
   }
 
- #arrow {
-    display: block;
-    margin-top: -125px;
+  #arrow {
+    padding: 0;
+    margin: 20px;
   }
 
 /******SERVICES*****/
@@ -717,6 +718,7 @@ to{
     grid-column-start: 1;
     grid-column-end: 3;
     align-self: center;
+    max-height: 100%;
   }
 
   .testimonials h4 {
@@ -727,9 +729,12 @@ to{
 
   .client {
     width: 350px;
-    padding: 0 25px;
     height: 100%;
     margin: 0;
+  }
+
+  #thomas {
+    padding: 0 50px;
   }
 
   .quote {
@@ -743,6 +748,39 @@ to{
     margin: 0;
   }
 
+  .bottom-boxes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    width: 200%;
+  }
+
+  #milkbottles {
+    background: url("../images/desktop/image-gallery-milkbottles.jpg") center;
+    background-size: cover;
+  }
+  
+  #orange-plate {
+    background: url("../images/desktop/image-gallery-orange.jpg") center;
+    background-size: cover;
+  }
+  
+  #cone {
+    background: url("../images/desktop/image-gallery-cone.jpg") center;
+    background-size: cover;
+  }
+  
+  #cubes {
+    background: url("../images/desktop/image-gallery-sugarcubes.jpg") center;
+    background-size: cover;
+  }
+}
+
+
+@media only screen and (min-width: 1450px) {
+  .hero {
+    background: url('../images/desktop/image-header.jpg') bottom;
+    background-size: contain;
+    min-height: 800px;
   }
 }
 
