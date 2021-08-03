@@ -196,6 +196,12 @@ h5 {
     font-family: "Fraunces", serif;
 }
 
+.hero-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 6px;
@@ -601,15 +607,25 @@ to{
     display: none;
   }
 
-  h1 {
+  .hero-text {
+    margin-top: -325px;
+    align-items: flex-start;
+  }
+
+  .hero-text h1 {
     width: 100%;
+    font-size: 48px;
+    letter-spacing: 10px;
   }
 
  #arrow {
     display: block;
-    height: 100%;
-    padding: 0;
-    padding-bottom: 0;
+    margin-top: -125px;
+  }
+
+  .services {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
