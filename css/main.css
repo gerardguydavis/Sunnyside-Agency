@@ -155,6 +155,7 @@ header {
 
 .dropmenu a {
   text-decoration: none;
+  color: hsl(232, 10%, 55%);
 }
 
 .dropmenu ul {
@@ -168,7 +169,6 @@ header {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   text-align: center;
-  color: hsl(232, 10%, 55%);
 }
 
 #contact {
@@ -239,13 +239,20 @@ h2 {
     background-size: cover;
 }
 
-#transform-text,
-#stand-out-text {
+#transform-text-wrap,
+#stand-out-text-wrap {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     text-align: center;
     padding: 70px 25px;
+}
+
+#transform-text,
+#stand-out-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .services a {
@@ -258,16 +265,16 @@ h2 {
     color: #22303d;
 }
 
-.services a::after {
+#transform-text a::after,
+#stand-out-text a::after {
     content: '';
     height: 8px;
     margin: -6px -6px 0;
-    justify-content: center;
     border-radius: 5px;
     display: block;
 }
 
-#transform-text {
+#transform-text-wrap {
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -544,7 +551,11 @@ to{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1200px) {
+/*****DESKTOP*****/
+
+@media only screen and (min-width: 1024px) {
+/******HERO******/
+
   .hero {
     background: url('../images/desktop/image-header.jpg') center;
     background-size: cover;
@@ -623,9 +634,82 @@ to{
     margin-top: -125px;
   }
 
+/******SERVICES*****/
+
   .services {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  #transform-text-wrap,
+  #stand-out-text-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #transform-text-wrap {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #transform-text,
+  #stand-out-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    text-align: left;
+    width: 400px;
+    margin: 0;
+  }
+
+  #transform-text p,
+  #stand-out-text p {
+    font-size: 16px;
+    line-height: 1.75em;
+  }
+
+  #transform-text a::after,
+  #stand-out-text a::after {
+      margin: -6px -6px 0;
+      display: block;
+      left: 0;
+  }
+
+  #transform {
+    background: url('../images/desktop/image-transform.jpg') center;
+    background-size: cover;
+  }
+
+  #stand-out{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    background: url('../images/desktop/image-stand-out.jpg') center;
+    background-size: cover;
+  }
+
+  #graphic-design {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    background: url('../images/desktop/image-graphic-design.jpg') center;
+    background-size: cover;
+  }
+
+  #photography {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    background: url('../images/desktop/image-photography.jpg') center;
+    background-size: cover;
+  }
+
+  .graphic-design-text,
+  .photography-text {
+    width: 350px;
   }
 }
 
