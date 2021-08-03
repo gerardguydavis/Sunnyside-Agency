@@ -637,7 +637,7 @@ to{
 /******SERVICES*****/
 
   .services {
-    grid-template-rows: 600px 600px 600px;
+    grid-template-rows: 600px 600px 600px 780px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -710,6 +710,39 @@ to{
   .graphic-design-text,
   .photography-text {
     width: 350px;
+  }
+
+  .testimonials {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+  }
+
+  .testimonials h4 {
+    width: 100%;
+    padding: 0 0 85px;
+    margin: 0;
+  }
+
+  .client {
+    width: 350px;
+    padding: 0 25px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .quote {
+    padding: 60px 0;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .testimonials h5 {
+    padding: 15px 0;
+    margin: 0;
+  }
+
   }
 }
 
