@@ -102,7 +102,6 @@ p {
     flex-flow: row wrap;
     background: url("../images/mobile/image-header.jpg") center;
     background-size: cover;
-    height: 100%;
 }
 
 header {
@@ -134,7 +133,7 @@ header {
 .dropmenu {
     display: flex;
     flex-flow: column;
-    position: fixed;
+    position: absolute;
     padding: 0 0 40px;
     justify-content: center;
     margin-top: 50px;
@@ -206,7 +205,7 @@ h1 {
 }
 
 #arrow {
-    padding-bottom: 135px;
+    padding: 0 0 135px;
 }
 
 /*****SERVICES*****/
@@ -451,17 +450,6 @@ to{
   }
 }
 
-@keyframes slide-up {
-  from {
-    height: 270px;
-  }
-
-  to {
-    height: 0;
-    overflow: hidden;
-  }
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -550,8 +538,79 @@ to{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background: url('../images/desktop/image-header.jpg') center;
+    background-size: cover;
+    min-height: 800px;
+  }
+  
+  header {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px 0 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+ #logo {
+   display: inline-block;
+ }
+
+  #hamburger {
+    display: none;
+  }
+
+  #navmenu {
+    display: inline-flex;
+    width: 600px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  #navmenu ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navmenu ul li {
+    list-style: none;
+    display: inline;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    padding: 0 25px;
+  }
+
+  #navmenu a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #contact {
+    margin: 0 0 0 25px;
+  }
+
+  #contact span {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+  }
+
+  #tab {
+    display: none;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+ #arrow {
+    display: block;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media print,
