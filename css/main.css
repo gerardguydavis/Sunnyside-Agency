@@ -618,7 +618,7 @@ to{
   .hero-text {
     align-items: flex-start;
     height: 100%;
-    margin-top: -100px;
+    margin-top: -150px;
     position: sticky;
     top: -1px;
   }
@@ -773,6 +773,13 @@ to{
     background: url("../images/desktop/image-gallery-sugarcubes.jpg") center;
     background-size: cover;
   }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 350px;
+  justify-content: center;
 }
 
 
