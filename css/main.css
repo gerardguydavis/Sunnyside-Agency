@@ -348,6 +348,7 @@ h2 {
     flex-flow: row wrap;
     text-align: center;
     padding: 35px 22px;
+    background-color: #fffbf8;
 }
 
 .testimonials h4,
@@ -639,16 +640,16 @@ to{
   .hero-text {
     align-items: flex-start;
     height: 100%;
-    margin-top: -150px;
+    margin-top: -200px;
     position: sticky;
     top: -1px;
   }
 
   .hero-text h1 {
     width: 100%;
-    font-size: 48px;
+    font-size: 54px;
     letter-spacing: 10px;
-    margin: 0;
+    margin: 0 0 50px;
   }
 
   #arrow {
