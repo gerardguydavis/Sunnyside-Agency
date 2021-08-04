@@ -366,7 +366,7 @@ h2 {
 .testimonials h5 {
     font-size: 18px;
     color: hsl(212, 27%, 19%);
-    margin-bottom: .75em;
+    margin-bottom: 14px;
 }
 
 .testimonials h6 {
@@ -449,6 +449,11 @@ footer {
   display: flex;
   width: 75%;
   justify-content: space-evenly;
+}
+
+.attribution {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
 }
 
 /*****ANIMATIONS*****/
@@ -595,12 +600,16 @@ to{
     list-style: none;
     display: inline;
     font-family: "Barlow", sans-serif;
-    padding: 0 25px;
+    margin: 0 25px;
   }
 
   #navmenu a {
     text-decoration: none;
     color: #fff;
+  }
+
+  #navmenu ul li:hover {
+    border-bottom: 2px solid #fff;
   }
 
   #contact {
@@ -610,6 +619,17 @@ to{
   #contact span {
     background-color: #fff;
     color: #000;
+    transition: .2s;
+  }
+
+  #contact span:hover {
+    background-color: #6fcefc;
+    color: #fff;
+    transition: .2s;
+  }
+
+  #contact:hover {
+    border-bottom: none;
   }
 
   #tab {
@@ -684,6 +704,17 @@ to{
       margin: -6px -6px 0;
       display: block;
       left: 0;
+      transition: .1s;
+  }
+
+  #transform-text a:hover::after {
+    background-color: hsl(51, 100%, 49%);
+    transition: .1s;
+  }
+
+  #stand-out-text a:hover::after {
+    background-color: hsl(7, 99%, 70%);
+    transition: .1s;
   }
 
   #transform {
@@ -790,11 +821,22 @@ to{
   }
 }
 
+/*****FOOTER*****/
+
 .footer-wrapper {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 350px;
   justify-content: center;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  transition: .2s;
+}
+
+.socials a img:hover {
+  filter: brightness(600%);
 }
 
 
