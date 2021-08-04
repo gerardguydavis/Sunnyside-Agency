@@ -336,7 +336,7 @@ h2 {
 }
 
 #photography p {
-    font-size: 18px;
+    font-size: 16px;
     color: hsl(198, 62%, 26%);
 }
 
@@ -553,6 +553,7 @@ to{
 /*****DESKTOP*****/
 
 @media only screen and (min-width: 1200px) {
+
 /******HERO******/
 
   .hero {
@@ -635,11 +636,16 @@ to{
     margin: 20px;
   }
 
+
 /******SERVICES*****/
 
   .services {
-    grid-template-rows: 600px 600px 600px 780px;
+    grid-template-rows: 600px 600px 600px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .services-wrapper {
+    background-color: #3ebfff;
   }
 
   #transform-text-wrap,
@@ -648,6 +654,7 @@ to{
     align-items: center;
     display: flex;
     flex-flow: row wrap;
+    background-color: #fff;
   }
 
   #transform-text-wrap {
@@ -714,11 +721,10 @@ to{
   }
 
   .testimonials {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    align-self: center;
-    max-height: 100%;
+    width: 100%;
+    padding: 125px 0;
+    display: flex;
+    align-items: center;
   }
 
   .testimonials h4 {
@@ -731,16 +737,26 @@ to{
     width: 350px;
     height: 100%;
     margin: 0;
+    padding: 10px 30px;
   }
 
   #thomas {
-    padding: 0 50px;
+    border-left: solid 1px hsl(210, 4%, 87%);
+    border-right: solid 1px hsl(210, 4%, 87%);
   }
 
   .quote {
     padding: 60px 0;
     margin: 0;
     font-size: 16px;
+  }
+
+  .testimonials img {
+    width: 125px;
+  }
+
+  .testimonials p {
+    line-height: 1.75em;
   }
 
   .testimonials h5 {
@@ -751,7 +767,6 @@ to{
   .bottom-boxes {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 450px;
-    width: 200%;
   }
 
   #milkbottles {
