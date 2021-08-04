@@ -144,15 +144,6 @@ header {
     animation: slide-down .3s;
 }
 
-/*.navmobile::after {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid #000;
-  border-bottom: 25px solid transparent;
-  z-index: 30;
-}*/
-
 .dropmenu a {
   text-decoration: none;
   color: hsl(232, 10%, 55%);
@@ -561,7 +552,10 @@ to{
 @media only screen and (min-width: 1200px) {
 
 /******HERO******/
-
+  #logo {
+    transform: scale(1.5);
+    transform-origin: left;
+  }
   .hero {
     background: url('../images/desktop/image-header.jpg') bottom;
     background-size: cover;
@@ -698,6 +692,7 @@ to{
   #stand-out-text p {
     font-size: 16px;
     line-height: 1.75em;
+    padding-bottom: 25px;
   }
 
   #transform-text a::after,
